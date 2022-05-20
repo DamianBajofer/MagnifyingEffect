@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf8'>
+	<title>Lupa con CSS3 y Jquery</title>
+	<link rel='stylesheet' type='text/css' href='css/lupa.css'>
+	<script language='javascript' src='js/jquery.js'></script>
+	<script language='javascript' src='js/funciones.js'></script>
+	<script language='javascript' src='js/lupa.js'></script>
+</head>
+<body>
+
+<div id='menu'>
+
+	<table>
+		<tr>
+			<td><input type='text' name='url' placeholder='url of the you image'></td>
+			<td><input type='button' value='Aplicate Image' onclick='ChangeImage()'></td>
+		</tr>
+		<tr>
+			<td><select name='zoom'>
+				<option value='1' onclick='ChangeZoom(this.value)'>Selected zoom</option>
+				<option value='2' onclick='ChangeZoom(this.value)'>Zoom x2</option>
+				<option value='3' onclick='ChangeZoom(this.value)'>Zoom x3</option>
+				<option value='4' onclick='ChangeZoom(this.value)'>Zoom x4</option>
+				<option value='5' onclick='ChangeZoom(this.value)'>Zoom x5</option>
+				<option value='6' onclick='ChangeZoom(this.value)'>Zoom x6</option>
+				<option value='7' onclick='ChangeZoom(this.value)'>Zoom x7</option>
+				<option value='8' onclick='ChangeZoom(this.value)'>Zoom x8</option>
+				<option value='9' onclick='ChangeZoom(this.value)'>Zoom x9</option>
+				<option value='10' onclick='ChangeZoom(this.value)'>Zoom x10</option>
+			</select></td>
+		</tr>
+	</table>
+	
+</div>
+
+
+<div id='contenedor' class='zoom'>
+
+	<div id='zoom-section'></div>
+
+</div>
+
+</body>
+</html>
